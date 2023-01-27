@@ -26,13 +26,11 @@ jobs:
           token: ${{ secrets.KEYSTORE_TOKEN }} 
           path: keystore 
 
-      - name: Grant execute permissions for gradlew
-        run: chmod +x gradlew
-      - name: Build with Gradle
-        run: ./gradlew build
+#      - name: Grant execute permissions for gradlew
+ #       run: chmod +x gradlew
+  #    - name: Build with Gradle
+   #     run: ./gradlew build
         
-      - name: Checkout the code
-        uses: actions/checkout@v2
 
       - name: Grant execute permissions for gradlew
         run: chmod +x gradlew
